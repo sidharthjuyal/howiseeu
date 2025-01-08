@@ -35,3 +35,11 @@ document.querySelectorAll('.grid-item').forEach(item => {
         checkAllTilesFlipped();
     });
 });
+
+window.onload = function() {
+    var img = new Image();
+    img.src = 'images/background.jpg';
+    img.onload = function() {
+        document.body.style.backgroundImage = 'url('+ img.src +')';
+    }
+}
